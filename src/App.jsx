@@ -10,8 +10,11 @@ const App = () => {
   const [ln, setln] = useState("");
   const [email, setemail] = useState("");
   const [Password, setpassword] = useState("");
+  const [allstudents, setallstudents] = useState([])
   const register = () => {
     console.log(fn, ln, email, Password);
+    let student = {fn,ln,email,Password};
+    setallstudents([...allstudents,student])
   };
 
   return (
