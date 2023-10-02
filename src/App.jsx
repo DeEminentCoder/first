@@ -23,7 +23,7 @@ const App = () => {
     <input type="text" placeholder="Email" />
     <input type="text" placeholder="Password" />
     <hr />
-    <button onClick={}>Register</button>
+    <button onClick={k}>Register</button>
     </>
   );
 };
