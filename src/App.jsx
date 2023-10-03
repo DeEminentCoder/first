@@ -1,21 +1,21 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import fishStyle from "./simeon.module.css";
-import { useState } from "react";
+// import React from "react";
+// import Navbar from "./components/Navbar";
+// import fishStyle from "./simeon.module.css";
+// import { useState } from "react";
 
 const App = () => {
   // const [myNo, setMyNo] = useState(0)
 
-  const [fn, setfn] = useState("");
-  const [ln, setln] = useState("");
-  const [email, setemail] = useState("");
-  const [Password, setpassword] = useState("");
-  const [allstudents, setallstudents] = useState([])
-  const register = () => {
-    console.log(fn, ln, email, Password);
-    let student = {fn,ln,email,Password};
-    setallstudents([...allstudents,student])
-  };
+  // const [fn, setfn] = useState("");
+  // const [ln, setln] = useState("");
+  // const [email, setemail] = useState("");
+  // const [Password, setpassword] = useState("");
+  // const [allstudents, setallstudents] = useState([])
+  // const register = () => {
+  //   console.log(fn, ln, email, Password);
+  //   let student = {fn,ln,email,Password};
+  //   setallstudents([...allstudents,student])
+  // };
 
   return (
     <>
@@ -23,7 +23,7 @@ const App = () => {
     <button onClick={()=>setMyNo(myNo+30)}>Increase</button> */}
 
       {/* SIMPLE SCHOOL PORTAL */}
-      <h1>Simozy Group Of Schools</h1>
+      {/* <h1>Simozy Group Of Schools</h1>
       <input
         type="text"
         placeholder="First Name"
@@ -45,7 +45,7 @@ const App = () => {
         onChange={(event) => setpassword(event.target.value)}
       />
       <hr />
-      <button onClick={register}>Register</button>
+      <button onClick={register}>Register</button> */}
     </>
   );
 };
