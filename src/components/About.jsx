@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const About = () => {
   const navigate = useNavigate();
   const todashboard = () => {
-  navigate("/")
+  navigate("")
 }
   return (
     <div>About
