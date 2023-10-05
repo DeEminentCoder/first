@@ -6,11 +6,13 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import User from "./components/User";
+import First from "./components/Ex1";
 
 const App = () => {
   return (
     <>
       <Navbar />
+      <First/>
       <Routes>
         <Route path="/" element={<Home />} /> {/*WildCard Routing*/}
         <Route path="/home" element={<Navigate to="/" />} />
