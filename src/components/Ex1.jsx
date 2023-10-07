@@ -45,7 +45,7 @@ const First = () => {
       />
       <hr />
       <button onClick={register}>Register</button> 
-    {/* </> */}
+    </>
   );
 };
 
