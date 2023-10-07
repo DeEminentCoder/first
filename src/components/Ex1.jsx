@@ -43,7 +43,7 @@ const First = () => {
         placeholder="Password"
         onChange={(event) => setpassword(event.target.value)}
       />
-      {/* <hr /> */}
+      <hr />
       <button onClick={register}>Register</button> 
     </>
   );
