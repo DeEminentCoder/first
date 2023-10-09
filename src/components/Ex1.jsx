@@ -45,9 +45,26 @@ const First = () => {
       />
       <hr />
       <button onClick={register}>Register</button> 
+        <table>
+          <tr>
+            <td>S/N</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email</td>
+            <td>Password</td>
+          </tr>
       {allstudents.map((student,index)=>(
-        <div>{student.fn}</div>
+        <tr>
+          <td>{index+1}</td>
+          <td>{student.fn}</td>
+          <td>{student.ln}</td>
+          <td>{student.email}</td>
+          <td>{student.Password}</td>
+        </tr>
+
       ))}
+        </table>
+
     </>
   );
 };
