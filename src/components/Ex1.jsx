@@ -36,21 +36,25 @@ const First = () => {
         type="text"
         placeholder="First Name"
         onChange={(event) => setfn(event.target.value)}
+        value={fn}
       />
       <input
         type="text"
         placeholder="Last Name"
         onChange={(event) => setln(event.target.value)}
+        value={ln}
       />
       <input
         type="text"
         placeholder="Email"
         onChange={(event) => setemail(event.target.value)}
+        value={email}
       />
       <input
         type="text"
         placeholder="Password"
         onChange={(event) => setpassword(event.target.value)}
+        value={Password}
       />
       <hr />
       <button onClick={register}>Register</button> 
