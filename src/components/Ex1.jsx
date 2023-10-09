@@ -25,7 +25,7 @@ const First = () => {
        <h1>Simozy Group Of Schools</h1>
       <input
         type="text"
-        placeholder="First Name"
+        placeholder="First "
         onChange={(event) => setfn(event.target.value)}
       />
       <input
