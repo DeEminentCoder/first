@@ -45,7 +45,7 @@ const First = () => {
       />
       <hr />
       <button onClick={register}>Register</button> 
-        <table>
+        <table className="table">
           <tr>
             <td>S/N</td>
             <td>First Name</td>
