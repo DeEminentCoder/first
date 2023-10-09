@@ -17,12 +17,12 @@ const First = () => {
 
   return (
     <>
-      <h1>{myNo}</h1>
+      {/* <h1>{myNo}</h1>
     <button onClick={()=>setMyNo(myNo+30)}>Increase</button>
-    <button onClick={()=>setMyNo(myNo-10)}>Decrease</button>
-
-      SIMPLE SCHOOL PORTAL
-       <h1>Simozy Group Of Schools</h1>
+    <button onClick={()=>setMyNo(myNo-10)}>Decrease</button> */}
+<br />
+      {/* SIMPLE SCHOOL PORTAL */}
+       {/* <h1>Simozy Group Of Schools</h1> */}
       <input
         type="text"
         placeholder="First Name"
@@ -45,6 +45,9 @@ const First = () => {
       />
       <hr />
       <button onClick={register}>Register</button> 
+      {allstudents.map((student,index)=>(
+        <div>{student.fn}</div>
+      ))}
     </>
   );
 };
