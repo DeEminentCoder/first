@@ -24,6 +24,10 @@ const First = () => {
     setallstudents(found)
   }
 
+  const editstudent = ()=>{
+    console.log();
+  }
+
   return (
     <>
       {/* <h1>{myNo}</h1>
@@ -75,7 +79,7 @@ const First = () => {
           <td>{student.Password}</td>
           <td>
             <button onClick={()=>delStudent(index)} className="btn btn-danger">Del</button>
-            <button className="btn btn-warning">Edt</button>
+            <button onClick={()=>editstudent(index)} className="btn btn-warning">Edt</button>
           </td>
         </tr>
 
