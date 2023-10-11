@@ -31,7 +31,7 @@ const First = () => {
     <button onClick={()=>setMyNo(myNo-10)}>Decrease</button> */}
 <br />
       {/* SIMPLE SCHOOL PORTAL */}
-       <h1>Simozy Group Of Schools</h1>
+       {/* <h1>Simozy Group Of Schools</h1> */}
       <input
         type="text"
         placeholder="First Name"
