@@ -79,7 +79,7 @@ const First = () => {
           <td>{student.Password}</td>
           <td>
             <button onClick={()=>delStudent(index)} classNameName="btn btn-danger">Del</button>
-            <button onClick={()=>editstudent(index)} classNameName="btn btn-warning">Edt</button>
+            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={()=>editstudent(index)}>Edt</button>
           </td>
         </tr>
 
