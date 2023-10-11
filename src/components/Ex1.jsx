@@ -9,6 +9,7 @@ const First = () => {
   const [email, setemail] = useState("");
   const [Password, setpassword] = useState("");
   const [allstudents, setallstudents] = useState([])
+  const [editedindex, setediedindex] = useState(0)
   const register = () => {
     let student = {fn,ln,email,Password};
     setallstudents([...allstudents,student])
@@ -24,8 +25,8 @@ const First = () => {
     setallstudents(found)
   }
 
-  const editstudent = ()=>{
-    console.log();
+  const editstudent = (ind)=>{
+    setediedindex(ind);
   }
 
   return (
@@ -88,7 +89,7 @@ const First = () => {
 
         {/* <!-- Button trigger modal --> */}
 <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+  Edit
 </button>
 
 {/* <!-- Modal --> */}
@@ -96,7 +97,7 @@ const First = () => {
   <div className="modal-dialog">
     <div className="modal-content">
       <div className="modal-header">
-        <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 className="modal-title fs-5" id="exampleModalLabel">Edit</h1>
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
