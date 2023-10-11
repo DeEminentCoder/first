@@ -10,6 +10,7 @@ const First = () => {
   const [Password, setpassword] = useState("");
   const [allstudents, setallstudents] = useState([])
   const [editedindex, setediedindex] = useState(0)
+  const [ediedObject, setediedObject] = useState({})
   const register = () => {
     let student = {fn,ln,email,Password};
     setallstudents([...allstudents,student])
@@ -27,6 +28,8 @@ const First = () => {
 
   const editstudent = (ind)=>{
     setediedindex(ind);
+    let selectedUser = allstudents[ind]
+    setediedObject(selectedUser)
   }
 
   return (
@@ -101,7 +104,10 @@ const First = () => {
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-        ...
+        <input type="text" className="form-control my-2" value={ediedObject.fn}/>
+        <input type="text" className="form-control my-2" value={ediedObject.ln}/>
+        <input type="text" className="form-control my-2" value={ediedObject.email}/>
+        <input type="text" className="form-control my-2" value={ediedObject.Password}/>
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
