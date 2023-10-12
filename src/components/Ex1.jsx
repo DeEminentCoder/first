@@ -11,6 +11,10 @@ const First = () => {
   const [allstudents, setallstudents] = useState([])
   const [editedindex, setediedindex] = useState(0)
   const [ediedObject, setediedObject] = useState({})
+  const [editedfn, seteditedfn] = useState("")
+  const [editedln, seteditedln] = useState("")
+  const [editedemail, seteditedemail] = useState("")
+  const [editedpassword, seteditedpassword] = useState("")
   const register = () => {
     let student = {fn,ln,email,Password};
     setallstudents([...allstudents,student])
@@ -29,6 +33,10 @@ const First = () => {
   const editstudent = (ind)=>{
     setediedindex(ind);
     let selectedUser = allstudents[ind]
+    seteditedfn(selectedUser.fn)
+    seteditedln(selectedUser.fn)
+    seteditedemail(selectedUser.email)
+    seteditedpassword(selectedUser.password)
     setediedObject(selectedUser)
   }
 
@@ -104,10 +112,10 @@ const First = () => {
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-        <input type="text" className="form-control my-2" value={ediedObject.fn} onChange={}/>
-        <input type="text" className="form-control my-2" value={ediedObject.ln} onChange={}/>
-        <input type="text" className="form-control my-2" value={ediedObject.email} onChange={}/>
-        <input type="text" className="form-control my-2" value={ediedObject.Password} onChange={}/>
+        <input type="text" className="form-control my-2" value={editedfn}/>
+        <input type="text" className="form-control my-2" value={editedln}/>
+        <input type="text" className="form-control my-2" value={editedemail}/>
+        <input type="text" className="form-control my-2" value={editedpassword}/>
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
