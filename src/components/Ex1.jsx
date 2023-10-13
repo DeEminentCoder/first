@@ -13,7 +13,7 @@ const First = () => {
   const [ediedObject, setediedObject] = useState({});
   const [editedfn, seteditedfn] = useState("");
   const [editedln, seteditedln] = useState("");
-  // const [editedemail, seteditedemail] = useState("");
+  const [editedemail, seteditedemail] = useState("");
   const [editedpassword, seteditedpassword] = useState("");
   const register = () => {
     let student = { fn, ln, email, Password };
