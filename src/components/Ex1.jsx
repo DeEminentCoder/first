@@ -10,7 +10,7 @@ const First = () => {
   const [Password, setpassword] = useState("");
   const [allstudents, setallstudents] = useState([]);
   const [editedindex, setediedindex] = useState(0);
-  // const [ediedObject, setediedObject] = useState({});
+  const [ediedObject, setediedObject] = useState({});
   const [editedfn, seteditedfn] = useState("");
   const [editedln, seteditedln] = useState("");
   const [editedemail, seteditedemail] = useState("");
