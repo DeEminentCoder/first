@@ -12,7 +12,8 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <First/>
+      <Navbar color="bg-danger"/>
+      {/* <First/> */}
       <Routes>
         <Route path="/" element={<Home />} /> {/*WildCard Routing*/}
         <Route path="/home" element={<Navigate to="/" />} />
