@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import User from "./components/User";
 import First from "./components/Ex1";
+import FormikForm from "./components/FormikForm";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact/me" element={<Contact />} />
+        <Route path="/formik" element={<FormikForm />} />
         {/*Children Routing*/}
         <Route path="/contact/:username" element={<User />} />
         {/*Dynamic Routing/Parameterized route*/}
