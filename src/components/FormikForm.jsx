@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useFormik } from "formik";
 const FormikForm = () => {
+    let formik = useFormik({})
   return (
     <>
       <div className="container-fluid">
