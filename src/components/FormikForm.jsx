@@ -6,7 +6,7 @@ const FormikForm = () => {
         initialValues : {
             firstname : "",
             lastname : "",
-            email : "JJ",
+            email : "",
             password : ""
         },
         onSubmit : (values)=>{
