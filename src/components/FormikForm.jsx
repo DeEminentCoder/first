@@ -12,7 +12,9 @@ const FormikForm = () => {
         onSubmit : (values)=>{
             console.log(values);
         },
-        validationSchema : yup.Schema
+        validationSchema : yup.object({
+            firstname : yup.string().required("Required")
+        })
     })
   return (
     <>
