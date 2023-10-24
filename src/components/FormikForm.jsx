@@ -21,7 +21,7 @@ const FormikForm = () => {
       <div className="container-fluid">
         <div className="row">
           <form action="" onSubmit={formik.handleSubmit}>
-            <h1 className="text-center">Sign Up Page</h1>
+            <h1 className="text-center">Sign Up Pge</h1>
             <input
               type="text"
               placeholder="First Name"
