@@ -10,7 +10,7 @@ const FormikForm = () => {
             password : ""
         },
         onSubmit : (values)=>{
-            console.log(values);
+            console.log(values)
         },
         validationSchema : yup.object({
             firstname : yup.string().required("Required")
