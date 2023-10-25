@@ -26,7 +26,7 @@ const FormikForm = () => {
               type="text"
               placeholder="First Name"
               className="form-control"
-              name="firstnamen"
+              name="firstname"
               value={formik.values.firstname}
               onChange={formik.handleChange}
             />
